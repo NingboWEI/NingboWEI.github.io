@@ -26,7 +26,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2024/01/08/DMS-note-book/images/DMS_note_book/cover.webp">
 <meta property="article:published_time" content="2024-01-08T18:26:12.000Z">
-<meta property="article:modified_time" content="2024-01-21T21:51:03.958Z">
+<meta property="article:modified_time" content="2024-01-22T14:29:20.923Z">
 <meta property="article:author" content="NingboWEI">
 <meta property="article:tag" content="OOP">
 <meta property="article:tag" content="study">
@@ -292,7 +292,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1705873863958"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1705933760923"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -307,7 +307,7 @@
 <h2 id="lecture-1-Basic-OO-Concept"><a href="#lecture-1-Basic-OO-Concept" class="headerlink" title="lecture 1 - Basic OO Concept"></a><strong>lecture 1 - Basic OO Concept</strong></h2><h3 id="1-obeject-oriented-programming-is-founded-on-these-ideas"><a href="#1-obeject-oriented-programming-is-founded-on-these-ideas" class="headerlink" title="1.obeject-oriented programming is founded on these ideas:"></a>1.obeject-oriented programming is founded on these ideas:</h3><ul>
 <li><strong>Abstraction</strong>: Simple things like objects represent more complex underlying code and data</li>
 <li><strong>Encapsulation</strong>: The ability to protect some components of the object from external access</li>
-<li><strong>Inheritance</strong>: The ability for a class(“subclass”) to extend or override functionality or another class(“superclass”)</li>
+<li><strong>Inheritance</strong>: The ability for a class(“subclass”) to extend or override functionality of another class(“superclass”)</li>
 <li><strong>Polymorphism</strong>: The provision(提供) of a single interface to entities of different types. It has two types. <ol>
 <li><strong>Method overriding</strong>: Compile time polymorphism. Methods with same class name, input and parameters appear in both super class and subclass.  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//for overriding</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Parent</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">display</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Child</span> <span class="keyword">extends</span> <span class="title class_">Parent</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">display</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><strong>Method overloading</strong>: Run time polymorphism. Methods in same class have same name but different in parameters.  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//for overloading</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">display</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">display</span><span class="params">(String s, <span class="type">int</span> num)</span> &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
@@ -897,7 +897,7 @@
 <h3 id="3-Licences"><a href="#3-Licences" class="headerlink" title="3.Licences"></a>3.Licences</h3><ul>
 <li>Software licences are to protect ur code and any future developers of the code.</li>
 <li>Some common OSS(open source software) licences:<ul>
-<li><strong>Permissive license</strong>: Subsequent(随后的) users can produce clodes source version and sell the software(我开源但不强制二次开发开源，写上我的名字就好)</li>
+<li><strong>Permissive license</strong>: Subsequent(随后的) users can produce close source version and sell the software(我开源但不强制二次开发开源，写上我的名字就好)</li>
 <li><strong>CopyLeft license</strong>: Any subsequent versions are left with the same rights e.g. source code must be supplied, and can be modified(我开源了二次开发也必须开源)</li>
 </ul>
 </li>
@@ -992,7 +992,7 @@
                     <a class="tag-none-link" href="/tags/English/" rel="tag">English</a>, <a class="tag-none-link" href="/tags/OOP/" rel="tag">OOP</a>, <a class="tag-none-link" href="/tags/maintaince/" rel="tag">maintaince</a>, <a class="tag-none-link" href="/tags/study/" rel="tag">study</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-01-21T21:51:03.958Z" itemprop="dateModified">最后编辑：2024-01-21</time>
+                    <time datetime="2024-01-22T14:29:20.923Z" itemprop="dateModified">最后编辑：2024-01-22</time>
                 </div>
             </div>
         </footer>
