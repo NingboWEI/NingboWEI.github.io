@@ -17,16 +17,16 @@
   
     <meta name="keywords" content="SQL, database" />
   
-  <meta name="description" content="数据库相关基础概念及SQL入门前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。">
+  <meta name="description" content="前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库及SQL入门">
 <meta property="og:url" content="http://example.com/2024/01/19/20240119SQL/index.html">
 <meta property="og:site_name" content="Nibaaa&#39;s diary note book">
-<meta property="og:description" content="数据库相关基础概念及SQL入门前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。">
+<meta property="og:description" content="前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2024/01/19/20240119SQL/images/20240119SQL/OIP.jpg">
 <meta property="article:published_time" content="2024-01-19T16:30:53.000Z">
-<meta property="article:modified_time" content="2024-01-19T16:42:12.247Z">
+<meta property="article:modified_time" content="2024-02-04T23:51:06.791Z">
 <meta property="article:author" content="NingboWEI">
 <meta property="article:tag" content="database">
 <meta property="article:tag" content="SQL">
@@ -192,7 +192,7 @@
         <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E5%8F%8ASQL%E5%85%A5%E9%97%A8"><span class="toc-text">数据库相关基础概念及SQL入门</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PART1-%E7%AE%80%E4%BB%8B-Database-DBMS-SQL"><span class="toc-text">PART1.简介 - Database, DBMS, SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Database"><span class="toc-text">1.Database:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-DBMS%EF%BC%9A"><span class="toc-text">2.DBMS：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BB%93%E6%9E%84%EF%BC%9A"><span class="toc-text">3.数据库结构：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-SQL"><span class="toc-text">4.SQL</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PART2-Relational-Model%E7%BB%93%E6%9E%84%E5%8F%8A%E7%9B%B8%E5%85%B3%E8%AF%A5%E6%A6%82%E5%BF%B5"><span class="toc-text">PART2.Relational Model结构及相关该概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%A1%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8F%8F%E8%BF%B0%E6%9C%AF%E8%AF%AD"><span class="toc-text">1.表的一些描述术语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Relational-algebra-expression%E5%9F%BA%E7%A1%80%E8%BF%90%E7%AE%97"><span class="toc-text">2.Relational algebra expression基础运算</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-SQL%E5%8F%8A%E5%85%B6%E6%9F%A5%E8%AF%A2%E8%AF%AD%E6%B3%95"><span class="toc-text">3.SQL及其查询语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Normalization%E8%8C%83%E5%BC%8F"><span class="toc-text">4.Normalization范式</span></a></li></ol>
     </div>
 </aside>
                 
@@ -278,7 +278,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            63
+                            1409
                         
                         字
                     </li>
@@ -290,19 +290,83 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1705682532247"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1707090666791"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
                 <div class="kratos-post-inner-toc toc-div-class" >
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E5%8F%8ASQL%E5%85%A5%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text">数据库相关基础概念及SQL入门</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PART1-%E7%AE%80%E4%BB%8B-Database-DBMS-SQL"><span class="toc-number">1.</span> <span class="toc-text">PART1.简介 - Database, DBMS, SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Database"><span class="toc-number">1.1.</span> <span class="toc-text">1.Database:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-DBMS%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">2.DBMS：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BB%93%E6%9E%84%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">3.数据库结构：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-SQL"><span class="toc-number">1.4.</span> <span class="toc-text">4.SQL</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PART2-Relational-Model%E7%BB%93%E6%9E%84%E5%8F%8A%E7%9B%B8%E5%85%B3%E8%AF%A5%E6%A6%82%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">PART2.Relational Model结构及相关该概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%A1%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8F%8F%E8%BF%B0%E6%9C%AF%E8%AF%AD"><span class="toc-number">2.1.</span> <span class="toc-text">1.表的一些描述术语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Relational-algebra-expression%E5%9F%BA%E7%A1%80%E8%BF%90%E7%AE%97"><span class="toc-number">2.2.</span> <span class="toc-text">2.Relational algebra expression基础运算</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-SQL%E5%8F%8A%E5%85%B6%E6%9F%A5%E8%AF%A2%E8%AF%AD%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">3.SQL及其查询语法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Normalization%E8%8C%83%E5%BC%8F"><span class="toc-number">4.</span> <span class="toc-text">4.Normalization范式</span></a></li></ol>
                 </div>
             
             <hr />
-            <div itemprop="articleBody"><h1 id="数据库相关基础概念及SQL入门"><a href="#数据库相关基础概念及SQL入门" class="headerlink" title="数据库相关基础概念及SQL入门"></a>数据库相关基础概念及SQL入门</h1><p>前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。<span id="more"></span></p>
-<p>考完试再接着写</p>
-</div>
+            <div itemprop="articleBody"><p>前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。<span id="more"></span><br><img src="/images/20240119SQL/example.jpg" alt="这是我假期北爱尔兰之旅的消费数据，请问这里面的primary key是什么？如何提取需要A钱的记录？"></p>
+<h1 id="PART1-简介-Database-DBMS-SQL"><a href="#PART1-简介-Database-DBMS-SQL" class="headerlink" title="PART1.简介 - Database, DBMS, SQL"></a>PART1.<strong>简介 - Database, DBMS, SQL</strong></h1><h2 id="1-Database"><a href="#1-Database" class="headerlink" title="1.Database:"></a>1.Database:</h2><ul>
+<li>In computing, a <strong>database</strong> is an organized <strong>collection of data</strong> or a <strong>type of data</strong> store based on the use of a <strong>database management system (DBMS)</strong>, the software that interacts with end users, applications, and the database itself to capture and analyze the data（维基百科）</li>
+</ul>
+<h2 id="2-DBMS："><a href="#2-DBMS：" class="headerlink" title="2.DBMS："></a>2.DBMS：</h2><ul>
+<li>DBMS，即<strong>Database Managerment System数据库管理系统</strong>, a software system that enables users to define, create, maintain and control access to the database(维基百科)</li>
+<li>DBMS主要分为两类<ul>
+<li><strong>关系数据库(Relational model)</strong>: 可以理解为一种“表”的数据结构，使用SQL查询。典型例子有MySQL,SQLite,Microsoft SQL Server</li>
+<li><strong>非关系数据库</strong>（NoSQL: 一般使用key-value存储数据&#x2F;图片&#x2F;文档。使用例子有redis,MongoDB…   <div class="alert alert-primary"><div class="icon"><i class="fa fa-refresh"></i></div><div class="text"><p>本文主讲Relational model</p>
+</div></div></li>
+</ul>
+</li>
+</ul>
+<h2 id="3-数据库结构："><a href="#3-数据库结构：" class="headerlink" title="3.数据库结构："></a>3.数据库结构：</h2><p>数据库架构大致分为三层：内层、概念层以及外层.</p>
+<ul>
+<li><strong>External Level and Schema</strong>: Defines the user’s view of database. 站在用户交互视角</li>
+<li><strong>Conceptual Level and Schema</strong>: Defines what data is stored &amp; raletion between data(当作是DB管理员)</li>
+<li><strong>Internal Level and Schema</strong>: Define how data is stored.</li>
+</ul>
+<h2 id="4-SQL"><a href="#4-SQL" class="headerlink" title="4.SQL"></a>4.SQL</h2><ul>
+<li>SQL-<strong>Structured Query Language结构化查询语句</strong>，一种特定目的的程序语言，用于管理关系数据库管理系统(RDBMS)</li>
+<li>主要包括数据的增，删，查，改，相关语法将在后文介绍</li>
+</ul>
+<hr>
+<h1 id="PART2-Relational-Model结构及相关该概念"><a href="#PART2-Relational-Model结构及相关该概念" class="headerlink" title="PART2.Relational Model结构及相关该概念"></a>PART2.<strong>Relational Model结构及相关该概念</strong></h1><h2 id="1-表的一些描述术语"><a href="#1-表的一些描述术语" class="headerlink" title="1.表的一些描述术语"></a>1.表的一些描述术语</h2><table>
+<thead>
+<tr>
+<th align="left">ID</th>
+<th align="center">Name</th>
+<th align="right">Salary</th>
+<th align="right">Department</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">20411616</td>
+<td align="center">Ningbo</td>
+<td align="right">50</td>
+<td align="right">Marketing</td>
+</tr>
+<tr>
+<td align="left">20413309</td>
+<td align="center">Yushi</td>
+<td align="right">70</td>
+<td align="right">Human resource</td>
+</tr>
+<tr>
+<td align="left">20417813</td>
+<td align="center">Zhihan</td>
+<td align="right">100</td>
+<td align="right">Accounts</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Schema</li>
+<li>Tuples</li>
+<li>Attributes</li>
+<li>domain</li>
+<li>Degree og a relation</li>
+<li>Cardinality of a relation</li>
+<li>Candidate key</li>
+<li>Primary key</li>
+<li>Foreign Key</li>
+</ul>
+<h2 id="2-Relational-algebra-expression基础运算"><a href="#2-Relational-algebra-expression基础运算" class="headerlink" title="2.Relational algebra expression基础运算"></a>2.Relational algebra expression基础运算</h2><p>…</p>
+<hr>
+<h1 id="3-SQL及其查询语法"><a href="#3-SQL及其查询语法" class="headerlink" title="3.SQL及其查询语法"></a>3.SQL及其查询语法</h1><hr>
+<h1 id="4-Normalization范式"><a href="#4-Normalization范式" class="headerlink" title="4.Normalization范式"></a>4.Normalization范式</h1></div>
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -369,7 +433,7 @@
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "http://example.com/2024/01/19/20240119SQL/";
             const title         = "「数据库及SQL入门」";
-            const excerpt       = `数据库相关基础概念及SQL入门前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。`;
+            const excerpt       = `前两天网站莫名其妙炸了，今天花小半天修一修顺便总结一下之前学的数据库及SQL。`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -391,7 +455,7 @@
                     <a class="tag-none-link" href="/tags/SQL/" rel="tag">SQL</a>, <a class="tag-none-link" href="/tags/database/" rel="tag">database</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-01-19T16:42:12.247Z" itemprop="dateModified">最后编辑：2024-01-19</time>
+                    <time datetime="2024-02-04T23:51:06.791Z" itemprop="dateModified">最后编辑：2024-02-04</time>
                 </div>
             </div>
         </footer>
